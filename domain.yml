@@ -4,6 +4,10 @@ intents:
   - greet
   - goodbye
   - thank
+  - order_pizza
+
+entities:
+  - food
 
 responses:
   utter_greet:
@@ -13,7 +17,10 @@ responses:
   - text: "Bye"
 
   utter_thank:
-    - text: "You're welcome, it was my pleasure to assist you"
+  - text: "You're welcome, it was my pleasure to assist you"
+
+  utter_order_pizza:
+  - text: "Sure, what kind of pizza you want?"
 
 session_config:
   session_expiration_time: 60
